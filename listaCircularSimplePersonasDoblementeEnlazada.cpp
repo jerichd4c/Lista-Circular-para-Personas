@@ -215,8 +215,20 @@ public:
 
     // Función para insertar al inicio
     void insertarAlInicio(T value) {
-        insertar(value);
-        head = tail->next; // Ajustar la cabeza al nuevo nodo insertado
+        Nodo<T>* newNode = new Nodo<T>(value);
+        if (head == NULL) {
+            head = tail = newNode;
+            head->next = head->prev = head;
+        } else { 
+            newNode->next = head;
+            newNode->prev = tail;
+            head->prev = newNode;
+            tail->next = newNode;
+            head = newNode;
+        }
+        if (newNode->data.ID == 0) {
+            newNode->data.ID = ++contadorID;
+        }
     }
 
     // Función para insertar en una posición aleatoria
