@@ -1,8 +1,10 @@
 <a id="readme-top"></a>
 
-<!-- LANGUAGE BADGE -->
+<!-- PROJECT LOGO -->
 <div align="center">
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" width="200" height="40">
+  <a href="https://github.com/jerichd4c/circular-linked-list-assignment">
+    <img src="https://raw.githubusercontent.com/jerichd4c/ReflexJDBC/main/cpp_logo.svg" alt="Logo" width="80" height="80">
+  </a>
 </div>
 
 
